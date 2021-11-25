@@ -21,27 +21,12 @@ Here are some ideas to get you started:
 - 🎓 &nbsp; Pursuing Masters in Computer Science at NC State University
 - 💼 &nbsp; Working as a Data Analyst at FlexGen Power Systems.
 - 🌱 &nbsp; Learning more about Cloud Architecture, Systems Design and Artificial Intelligence.
-- 👯 &nbsp; Practicing yoga and enjoying baking as hobbies/side hustles.
+- 👯 &nbsp; Practicing yoga and enjoying baking as hobbies.
 
 <h3>🛠 Tech Stack</h3>
 
-- 💻 &nbsp; Python | SQL | C++ | R (Statistics) | MATLAB
-- 🌐 &nbsp; HTML | CSS | JavaScript | Bootstrap | Node.js | ReactJS
-- 🛢 &nbsp; MySQL | MongoDB
-- 🔧 &nbsp; Git | Markdown
-- 🖥 &nbsp; PowerBI| Tableau | Grafana
-
-<br/>
-
-<!-- [![AVS1508's GitHub Stats](https://github-readme-stats.vercel.app/api?username=AVS1508&show_icons=true)](https://github.com/AVS1508) -->
-
-<!-- <h3> 🤝🏻 Connect with Me </h3> -->
-
-<p align="center">
-<!-- <a href="https://www.adityavsingh.com/"><img alt="Website" src="https://img.shields.io/badge/Website-www.adityavsingh.com-blue?style=flat-square&logo=google-chrome"></a> -->
-<!-- <a href="https://www.linkedin.com/in/ashnayak/"><img alt="LinkedIn"></a> -->
-<!--   src="https://img.shields.io/badge/LinkedIn-Aditya%20Vikram%20Singh-blue?style=flat-square&logo=linkedin" -->
-
-<!--   <a href="mailto:aunayak@ncsu.edu"></a> -->
-<!--   <img alt="Email" src="https://img.shields.io/badge/Email-avsingh@umasrc="https://img.shields.io/badge/LinkedIn-Aditya%20Vikram%20Singh-blue?style=flat-square&logo=linkedin"ss.edu-blue?style=flat-square&logo=gmail"> -->
-</p>
+- 💻 &nbsp; Python | C++ | R (Statistics) | MATLAB
+- 🌐 &nbsp; HTML | CSS | JavaScript | Bootstrap | Node.js 
+- 🛢 &nbsp; MySQL | MongoDB | InfluxDB
+- 🖥 &nbsp; PowerBI | Tableau | Grafana
+- 🔧 &nbsp; Git | Markdown | Excel
