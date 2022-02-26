@@ -18,8 +18,8 @@ Here are some ideas to get you started:
 
 
 - 🤔 &nbsp; Exploring new technologies and developing software solutions and quick hacks.
+- 💼 &nbsp; Working as a Software Engineer Intern at SpaceX.
 - 🎓 &nbsp; Pursuing Masters in Computer Science at NC State University
-- 💼 &nbsp; Working as a Data Analyst at FlexGen Power Systems.
 - 🌱 &nbsp; Learning more about Cloud Architecture, Systems Design and Artificial Intelligence.
 - 👯 &nbsp; Practicing yoga and enjoying baking as hobbies.
 
