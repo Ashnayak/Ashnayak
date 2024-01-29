@@ -21,9 +21,9 @@ node.js
 <h3> 👨🏻‍💻 About Me </h3>
 
 
-- 🤔 &nbsp; Passionate about exploring new technologies and developing software solutions and quick hacks.
+- 🤔 &nbsp; Passionate about exploring new technologies and developing software solutions and quick hacks
 - 🎓 &nbsp; Earned my Masters in Computer Science at NC State University
-- 🌱 &nbsp; Currently learning more about Cloud Architecture, Systems Design and Artificial Intelligence.
+- 🌱 &nbsp; Currently learning more about Cloud Architecture, Systems Design and Artificial Intelligence
 - 👯 &nbsp; I like playing boardgames as a hobby
 
 <h3>🛠 Tech Stack</h3>
