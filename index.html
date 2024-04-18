@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio | Ashwini Nayak</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/ash.jpg">
+            <a href="#">Ashwini Nayak</a>
+        </div>
+        <div class="nav-links">
+            <a class="selected" href="index.html">Home</a>
+            <a href="works.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="info">
+            <h1>Hello, I'm Ashwini Nayak <br>Software Developer</h1>
+            <p>As an enthusiastic knowledge seeker, I embrace challenges that enable me to synthesize learning and gain experience solving real world problems. Everything is impossible until it is done.</p>
+            
+            <!-- Button to download resume -->
+                <a href="https://drive.google.com/file/d/1pK4uwzfW1hFUObCXcDncTsSUA1zh-bid/view?usp=drive_link" download="Ashwini_nayak.pdf" target="_blank" class="download-button">
+                    <button>Download Resume
+                </button>
+                </a>
+                <div id="leetcode-stats"></div>
+        </div>
+        <img src="assets/ash.jpg">
+    </div>
+
+    <div class="recent">
+        <div class="header">
+            <h4>Recent Posts</h4>
+            <a href="blog.html">View all</a>
+        </div>
+        <div class="posts">        
+            <div class="post-item">
+                <h3>Solved 300 problems on LeetCode!</h3>
+                <div class="info">
+                    <h5>18th Apr 2024</h5>
+                    <h5>|</h5>
+                    <h5>LeetCode</h5>
+                </div>
+                <p>Embarking on the challenge of solving 300 LeetCode questions has been a transformative journey, filled with learning, perseverance, and growth. Each problem tackled has honed my technical and problem solving skills.</p>
+            </div>
+            <div class="post-item">
+                <h3>Achieved a Leetcode badge for March 2024!</h3>
+                <div class="info">
+                    <h5>31st Mar 2024</h5>
+                    <h5>|</h5>
+                    <h5>LeetCode</h5>
+                </div>
+                <p>Showcasing my consistency and perseverance by solving problem of the day every day for the month of March.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="recent-proj">
+        <div class="header">
+            <h4>Featured Projects</h4>
+            <a href="works.html">View all</a>
+        </div>
+    </div>
+
+    <div class="featured">
+
+        
+        <div class="item">
+            <div class="images-container">
+                <img src="assets/tinyurl.png" width="80">
+            </div>
+            <div class="details">
+                <a href='https://github.com/Ashnayak/Tiny-URL' target="_blank">
+                    <h3>Tiny-URL - A URL shortening application.</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2024</div>
+                        <h4>Node.js</h4>
+                        <h4>Redis</h4>
+                        <h4>Docker</h4>
+                    </div>
+                    <p>A URL shortening application.</p>
+                </a>
+            </div>
+            <div class="arrow left-arrow">&lt;</div>
+            <div class="arrow right-arrow">&gt;</div>
+        </div>
+
+        <div class="item">
+            <div class="images-container">
+                <img src="assets/featurehunt.png" width="80">
+            </div>
+            <div class="details">
+                <a href='https://github.com/Ashnayak/feature-hunt' target="_blank">
+                    <h3>Feature Hunt</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2021</div>
+                        <h4>Flask</h4>
+                        <h4>React</h4>
+                        <h4>Python</h4>
+                    </div>
+                    <p>Feature Hunt is a platform that allows users to share, vote and discuss feature requests leading to better product decisions. </p>
+
+                    <p>This chat application is built using Flask, Javascript, Python, HTML, CSS and MongoDB. </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="images-container">
+                <img src="assets/simplii.png" width="80">
+                <!-- Add more images as needed -->
+            </div>
+            <div class="details">
+                <a href='https://github.com/Ashnayak/Simplii' target="_blank">
+                    <h3>Simplii - Make Multitasking Manageable!</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2021</div>
+                        <h4>AWS</h4>
+                        <h4>Flask</h4>
+                        <h4>MySQL</h4>
+                    </div>
+                    <p> Tool provides a customized user experience and enables user to efficiently multi-task.</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <footer>
+        <div class="socials">
+            <a href='https://leetcode.com/Ashnayak7/' target="_blank"><i class='bx bxl-codepen'></i></a>
+            <a href='https://www.linkedin.com/in/ashnayak/' target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href='https://github.com/Ashnayak' target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
+    </footer>
+    <!-- JavaScript to fetch and display LeetCode stats -->
+    <script>
+        function fetchLeetCodeStats() {
+            fetch('https://leetcode-api-faisalshohag.vercel.app/ashnayak7')
+                .then(response => response.json())
+                .then(data => {
+                    const totalSolved = data.totalSolved;
+                    const easySolved = data.easySolved;
+                    const mediumSolved = data.mediumSolved;
+                    const hardSolved = data.hardSolved;
+                    
+                    // Displaying the data
+                    const leetCodeStatsContainer = document.getElementById('leetcode-stats');
+                    leetCodeStatsContainer.innerHTML = `
+                        <h2>LeetCode Statistics</h2>
+                        <p>Total Questions Solved: ${totalSolved}</p>
+                        <p>Easy Problems Solved: ${easySolved}</p>
+                        <p>Medium Problems Solved: ${mediumSolved}</p>
+                        <p>Hard Problems Solved: ${hardSolved}</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error('Error fetching LeetCode data:', error);
+                });
+        }
+
+        // Fetch LeetCode stats initially
+        fetchLeetCodeStats();
+
+        // Fetch LeetCode stats every 1 hour
+        setInterval(fetchLeetCodeStats, 3600000); // 3600000 milliseconds = 1 hour
+    </script>
+
+</body>
+
+</html>

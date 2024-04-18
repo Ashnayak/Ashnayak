@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Works Page | Ashwini Nayak</title>
+</head>
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.right-arrow').click(function() {
+                $('.images-container').animate({marginLeft: '-=100%'});
+            });
+
+            $('.left-arrow').click(function() {
+                $('.images-container').animate({marginLeft: '+=100%'});
+            });
+        });
+    </script>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/ash.jpg">
+            <a href="index.html">Ashwini Nayak</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="selected" href="works.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <h1 class="page-title">Projects</h1>
+
+    <div class="content">
+        <div class="works-list">
+            
+            <div class="item">
+                <div class="images-container">
+                    <img src="assets/tinyurl.png" width="80">
+                </div>
+                <div class="details">
+                    <a href='https://github.com/Ashnayak/Tiny-URL' target="_blank">
+                        <h3>Tiny-URL - A URL shortening application.</h3>
+                        <div class="item-info">
+                            <div class="year-badge">2024</div>
+                            <h4>Node.js</h4>
+                            <h4>Redis</h4>
+                            <h4>Docker</h4>
+                        </div>
+                        <p>A URL shortening application.</p>
+                    </a>
+                </div>
+                <div class="arrow left-arrow">&lt;</div>
+                <div class="arrow right-arrow">&gt;</div>
+            </div>
+            
+            <div class="item">
+                <div class="images-container">
+                    <img src="assets/featurehunt.png" width="80">
+                </div>
+                <div class="details">
+                    <a href='https://github.com/Ashnayak/feature-hunt' target="_blank">
+                        <h3>Feature Hunt</h3>
+                        <div class="item-info">
+                            <div class="year-badge">2021</div>
+                            <h4>Flask</h4>
+                            <h4>React</h4>
+                            <h4>Python</h4>
+                        </div>
+                        <p>Feature Hunt is a platform that allows users to share, vote and discuss feature requests leading to better product decisions. </p>
+
+                        <p>This chat application is built using Flask, Javascript, Python, HTML, CSS and MongoDB. </p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="images-container">
+                    <img src="assets/simplii.png" width="80">
+                    <!-- Add more images as needed -->
+                </div>
+                <div class="details">
+                    <a href='https://github.com/Ashnayak/Simplii' target="_blank">
+                        <h3>Simplii - Make Multitasking Manageable!</h3>
+                        <div class="item-info">
+                            <div class="year-badge">2021</div>
+                            <h4>AWS</h4>
+                            <h4>Flask</h4>
+                            <h4>MySQL</h4>
+                        </div>
+                        <p> Tool provides a customized user experience and enables user to efficiently multi-task.</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="socials">
+            <a href='https://leetcode.com/Ashnayak7/' target="_blank"><i class='bx bxl-codepen'></i></a>
+            <a href='https://www.linkedin.com/in/ashnayak/' target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href='https://github.com/Ashnayak' target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
