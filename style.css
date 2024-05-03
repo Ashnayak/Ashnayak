@@ -90,8 +90,25 @@ nav .nav-links a.selected {
     transition: 0.3s ease;
 }
 
+.main .info button,
+.content .blog-list .blog-item .buttons button {
+    padding: 10px 30px;
+    background: #303f9f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
 .main .info button:hover,
 .content .post-list .post-item .buttons button:hover {
+    background: #1a237e;
+}
+
+.main .info button:hover,
+.content .blog-list .blog-item .buttons button:hover {
     background: #1a237e;
 }
 
@@ -140,7 +157,19 @@ nav .nav-links a.selected {
     gap: 20px;
 }
 
+.recent .blogs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .recent .posts .post-item {
+    background-color: #fff;
+    padding: 24px;
+    width: 460px;
+}
+
+.recent .blogs .blog-item {
     background-color: #fff;
     padding: 24px;
     width: 460px;
@@ -152,8 +181,21 @@ nav .nav-links a.selected {
     margin-bottom: 18px;
 }
 
+.recent .blogs .blog-item h3,
+.content .blog-list .blog-item h3 {
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
 .recent .posts .post-item .info,
 .content .post-list .post-item .info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.recent .blogs .blog-item .info,
+.content .blog-list .blog-item .info {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
@@ -165,7 +207,17 @@ nav .nav-links a.selected {
     font-weight: 400;
 }
 
+.recent .blogs .blog-item .info h5,
+.content .blog-list .blog-item h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .recent .posts .post-item p {
+    width: 400px;
+}
+
+.recent .blogs .blog-item p {
     width: 400px;
 }
 
@@ -391,7 +443,20 @@ footer p {
     gap: 20px;
 }
 
+.content .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .content .post-list .post-item {
+    background-color: #dbedf2;
+    padding: 24px;
+    width: 960px;
+    border-radius: 10px;
+}
+
+.content .blog-list .blog-item {
     background-color: #dbedf2;
     padding: 24px;
     width: 960px;
@@ -406,7 +471,20 @@ footer p {
     gap: 10px;
 }
 
+.content .blog-list .blog-item .buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
 .content .post-list .post-item .buttons button {
+    font-size: 14px;
+    padding: 6px 20px;
+}
+
+.content .blog-list .blog-item .buttons button {
     font-size: 14px;
     padding: 6px 20px;
 }
@@ -417,7 +495,17 @@ footer p {
     transition: color 0.3s ease;
 }
 
+.content .blog-list .blog-item .buttons i {
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
 .content .post-list .post-item .buttons i:hover {
+    color: #303f9f;
+}
+
+.content .blog-list .blog-item .buttons i:hover {
     color: #303f9f;
 }
 
@@ -487,6 +575,23 @@ footer p {
     right: 0;
 }
 
+.blog-item {
+    display: flex;
+    align-items: center; /* Aligns the image and content vertically */
+    gap: 20px; /* Spacing between the image and the content */
+}
+
+.blog-thumbnail {
+    width: 200px; /* Set the width of the thumbnail */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
+}
+
+.blog-content {
+    flex-grow: 1; /* Allows the content to fill the remaining space */
+}
+
 @media screen and (max-width: 1400px) {
     nav {
         padding: 20px 60px;
@@ -541,6 +646,10 @@ footer p {
     .content .container {
         width: 100%;
     }
+    .content .blog-list .blog-item,
+    .content .container {
+        width: 100%;
+    }
     .content .container img {
         width: 250px;
         height: 250px;
@@ -590,6 +699,21 @@ footer p {
         font-size: 14px;
     }
     .recent .posts .post-item p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .recent .blogs .blog-item {
+        width: 100%;
+    }
+    .recent .blogs .blog-item h3,
+    .content .blog-list .blog-item h3 {
+        font-size: 20px;
+    }
+    .recent .blogs .blog-item .info h5,
+    .content .blog-list .blog-item .info h5 {
+        font-size: 14px;
+    }
+    .recent .blogs .blog-item p {
         width: 100%;
         font-size: 14px;
     }
@@ -666,6 +790,10 @@ footer p {
         border-radius: 50px;
     }
     .recent .posts,
+    .content .container {
+        flex-direction: column;
+    }
+    .recent .blogs,
     .content .container {
         flex-direction: column;
     }
