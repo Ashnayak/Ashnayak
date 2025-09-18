@@ -36,3 +36,5 @@ node.js
 - 📊 &nbsp; PowerBI | Tableau | Grafana
 - 🌐 &nbsp; HTML | CSS | JavaScript
 - 🔧 &nbsp; Git | Markdown | Excel
+
+[![An image of @ashnayak's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/ashnayak)](https://holopin.io/@ashnayak)
